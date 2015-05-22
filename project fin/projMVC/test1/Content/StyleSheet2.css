@@ -1,0 +1,15 @@
+﻿*{
+        margin:2px; /*Defin a a separacao das colunas aqui*/
+        padding:0;
+    }
+    .linha{
+        padding:0;
+        clear:both;
+    }
+
+    .coluna{    
+        height:105px;
+        border: 1px solid #000000;
+        width:120px;      
+        float:left;
+    }

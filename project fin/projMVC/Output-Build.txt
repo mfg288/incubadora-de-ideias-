@@ -1,0 +1,6 @@
+﻿------ Build started: Project: test1, Configuration: Debug Any CPU ------
+C:\Users\mfg\documents\visual studio 2013\Projects\test1\test1\Account\Register.aspx.vb(12) : error BC30451: 'UserNameCtrl' is not declared. It may be inaccessible due to its protection level.
+C:\Users\mfg\documents\visual studio 2013\Projects\test1\test1\Account\Register.aspx.vb(15) : error BC30451: 'Password' is not declared. It may be inaccessible due to its protection level.
+C:\Users\mfg\documents\visual studio 2013\Projects\test1\test1\Account\Register.aspx.vb(20) : error BC30451: 'ErrorMessage' is not declared. It may be inaccessible due to its protection level.
+C:\Users\mfg\documents\visual studio 2013\Projects\test1\test1\Account\Register.aspx.vb(24) : error BC30506: Handles clause requires a WithEvents variable defined in the containing type or one of its base types.
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
