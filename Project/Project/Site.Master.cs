@@ -72,38 +72,36 @@ namespace Project
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            createGenres();
+            //createGenres();
         }
 
 
 
-        protected void createGenres()
-        {
-            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString))
-            {
-                SqlDataAdapter adpt = new SqlDataAdapter("SELECT * FROM [Comentarios]", con);
-                DataTable dt = new DataTable();
-                adpt.Fill(dt);
-                foreach (DataRow dr in dt.Rows)
-                {
+        //protected void createGenres()
+        //{
+        //    using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString))
+        //    {
+        //        SqlDataAdapter adpt = new SqlDataAdapter("SELECT * FROM [Comentarios]", con);
+        //        DataTable dt = new DataTable();
+        //        adpt.Fill(dt);
+        //        foreach (DataRow dr in dt.Rows)
+        //        {
 
-                    HtmlGenericControl newLi = new HtmlGenericControl("li");
-                    newLi.ID = dr["IdComentario"].ToString();
-
-
-                    HtmlGenericControl anchor = new HtmlGenericControl("a");
-                    anchor.Attributes.Add("href", "Projects");
-                    anchor.InnerText = dr["Titulo"].ToString();
-
-                    //HtmlGenericControl img = new HtmlGenericControl("img");
-                    //img.Attributes.Add("height", "100px");
-                    //img.Attributes.Add("width", "100px");
-                    //img.Attributes.Add("src", "Images/info.png");
-                    //anchor.Controls.Add(img);
-                    newLi.Controls.Add(anchor);
-                    generos.Controls.Add(newLi);
+        //            HtmlGenericControl newLi = new HtmlGenericControl("li");
+        //            newLi.ID = dr["IdComentario"].ToString();
 
 
+        //            HtmlGenericControl anchor = new HtmlGenericControl("a");
+        //            anchor.Attributes.Add("href", "Projects");
+        //            anchor.InnerText = dr["Titulo"].ToString();
+
+        //            //HtmlGenericControl img = new HtmlGenericControl("img");
+        //            //img.Attributes.Add("height", "100px");
+        //            //img.Attributes.Add("width", "100px");
+        //            //img.Attributes.Add("src", "Images/info.png");
+        //            //anchor.Controls.Add(img);
+        //            newLi.Controls.Add(anchor);
+        //            generos.Controls.Add(newLi);
 
 
 
@@ -111,18 +109,20 @@ namespace Project
 
 
 
-                    //generos.InnerHtml = "<li><a href=\"Projects\">" + dr["Titulo"].ToString() + "</a></li> ";
+
+
+        //            //generos.InnerHtml = "<li><a href=\"Projects\">" + dr["Titulo"].ToString() + "</a></li> ";
 
 
 
 
 
-                }
-            }
+        //        }
+        //    }
 
 
 
-        }
+        //}
 
 
 
