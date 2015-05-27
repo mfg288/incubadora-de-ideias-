@@ -1,0 +1,2 @@
+SELECT  SUM(Pontuação)as soma,AVG(Pontuação)as AVG ,COUNT(*)as contar,SUM(Pontuação)/ COUNT(*) as Media
+FROM [C:\PROGRAM FILES (X86)\MICROSOFT SQL SERVER\MSSQL11.MSSQLSERVER\MSSQL\DATA\TEST2.MDF].[dbo].[Pontação]     (indicadore da tabela)
