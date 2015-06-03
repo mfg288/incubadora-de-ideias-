@@ -117,5 +117,5 @@ C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideas\Incubadora_Idea
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideas\Incubadora_Ideas\obj\Debug\Incubadora_Ideas.csproj.GenerateResource.Cache
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideas\Incubadora_Ideas\obj\Debug\Incubadora_Ideas.dll
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideas\Incubadora_Ideas\obj\Debug\Incubadora_Ideas.pdb
-C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideas\Incubadora_Ideas\bin\Incubadora_Ideas.dll.CodeAnalysisLog.xml
-C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideas\Incubadora_Ideas\bin\Incubadora_Ideas.dll.lastcodeanalysissucceeded
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideas\Incubadora_Ideas\obj\Debug\Incubadora_Ideas.csprojResolveAssemblyReference.cache
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideas\Incubadora_Ideas\obj\Debug\Incubadora_Ideas.Properties.Resources.resources
