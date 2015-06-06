@@ -182,6 +182,7 @@
     <Content Include="Scripts\StarRating\star-rating.js" />
     <Content Include="Scripts\StarRating\star-rating.min.js" />
     <Content Include="TestForm.aspx" />
+    <Content Include="WebForm2.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Projects.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -436,6 +437,13 @@
     </Compile>
     <Compile Include="TestForm.aspx.designer.cs">
       <DependentUpon>TestForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
