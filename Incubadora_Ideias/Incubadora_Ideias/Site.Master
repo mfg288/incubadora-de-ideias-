@@ -14,6 +14,12 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+    <link href="Content/Error.css" rel="stylesheet" />
+    <link href="Content/StyleSheet.css" rel="stylesheet" />
+    <link href="Content/FileInput/fileinput.min.css" rel="stylesheet" />
+    <link href="Content/Selectize/selectize.bootstrap3.css" rel="stylesheet" />
+    <link href="Content/StarRating/star-rating.min.css" rel="stylesheet" />
+
 </head>
 <body>
     <form runat="server">
@@ -34,6 +40,11 @@
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
+                <asp:ScriptReference Path="~/Scripts/FileInput/fileinput.min.js" />
+                <asp:ScriptReference Path="~/Scripts/FileInput/fileinput_locale_pt.js" />
+                <asp:ScriptReference Path="~/Scripts/Selectize/selectize.min.js" />
+                <asp:ScriptReference Path="~/Scripts/StarRating/star-rating.min.js" />
+                <asp:ScriptReference Path="~/Scripts/Scripts.js" />
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
