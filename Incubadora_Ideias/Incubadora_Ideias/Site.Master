@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="pt">
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <link href="Content/StyleSheet.css" rel="stylesheet" />
@@ -56,24 +56,29 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="navbar-brand" href="Index.aspx">
+                        <img alt="Brand" src="/Content/Images/Logos/Logo_name.png" height="24">
+                    </a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li id="li_home_navbar" runat="server"><a runat="server" href="~/Index.aspx"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp&nbspPrincipal</a></li>
+                        <li id="li_ideas_navbar" runat="server"><a runat="server" href="~/Project/Ideas.aspx"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp&nbspMinhas Ideas</a></li>
+                        <li id="li_projetos_navbar" runat="server"><a runat="server" href="~/Project/Projetos.aspx"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>&nbsp&nbspProjetos</a></li>
+                        <li id="li_contactos_navbar" runat="server"><a runat="server" href="~/Project/Contactos.aspx"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp&nbspContactos</a></li>
+                        <li id="li_sobre_navbar" runat="server"><a runat="server" href="~/Project/Sobre.aspx"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>&nbsp&nbspSobre Nos</a></li>
+                        <li id="li_backoffice_navbar" runat="server"><a runat="server" href="~/BackOffice/BackOffice.aspx"><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span>&nbsp&nbspBackOffice</a></li>
                     </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <asp:LoginView runat="server" ViewStateMode="Disabled" ID="loginview_id">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                                <li id="li_register_navbar" runat="server"><a runat="server" href="~/Account/Register">Register</a></li>
+                                <li id="li_login_navbar" runat="server"><a runat="server" href="~/Account/Login">Log in</a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                <li id="li_manage_navbar" runat="server"><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
                                 <li>
                                     <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
                                 </li>
