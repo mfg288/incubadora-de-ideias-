@@ -14,7 +14,6 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-    <link href="Content/Error.css" rel="stylesheet" />
     <link href="Content/StyleSheet.css" rel="stylesheet" />
     <link href="Content/FileInput/fileinput.min.css" rel="stylesheet" />
     <link href="Content/Selectize/selectize.bootstrap3.css" rel="stylesheet" />
