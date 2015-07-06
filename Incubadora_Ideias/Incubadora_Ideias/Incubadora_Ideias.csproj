@@ -194,8 +194,6 @@
     <Content Include="Content\Images\Logos\Logo_name.png" />
     <Content Include="Content\Images\Logos\twitter_logo.png" />
     <Content Include="Content\Images\User.png" />
-    <Content Include="Content\Images\users_Avatars\aaasd%40fasdas.asd.jpg" />
-    <Content Include="Content\Images\users_Avatars\asdasda%40asdsssasd.asd.jpg" />
     <Content Include="Content\Selectize\selectize.bootstrap3.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\StarRating\star-rating.min.css" />
@@ -434,6 +432,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\users_Avatars\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
