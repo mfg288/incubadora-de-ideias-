@@ -25,3 +25,24 @@ $(document).ready(function () {
         }
     });
 });
+
+
+
+
+
+//footer auto resize
+var bumpIt = function () {
+    $('body').css('margin-bottom', $('.footer').height() + 25);
+},
+    didResize = false;
+
+$(window).resize(function () {
+    didResize = true;
+});
+setInterval(function () {
+    if (didResize) {
+        didResize = false;
+        bumpIt();
+    }
+}, 250);
+bumpIt();

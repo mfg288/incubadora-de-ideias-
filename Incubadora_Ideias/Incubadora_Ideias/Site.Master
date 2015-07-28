@@ -18,7 +18,8 @@
     <link href="Content/FileInput/fileinput.min.css" rel="stylesheet" />
     <link href="Content/Selectize/selectize.bootstrap3.css" rel="stylesheet" />
     <link href="Content/StarRating/star-rating.min.css" rel="stylesheet" />
-
+    <link href="Content/FontAwesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/BootstrapSocial/bootstrap-social.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
@@ -92,10 +93,67 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
         </div>
+
+        <footer class="footer">
+
+            <div class="container body-content">
+                <div class="footer-right">
+
+                    <a class="btn btn-social-icon btn-facebook btn-sm">
+                        <i class="fa fa-facebook"></i>
+                    </a><a class="btn btn-social-icon btn-google btn-sm">
+                        <i class="fa fa-google"></i>
+                    </a><a class="btn btn-social-icon btn-twitter btn-sm">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+
+                    <p>Reportar Bug</p>
+
+                </div>
+                <div class="footer-left">
+                    <p class="footer-links">
+                        <a href="#">Principal</a>
+                        ·
+                   
+                        <a href="#">Minhas Ideias</a>
+                        ·
+                    <a href="#">Projetos</a>
+                        ·
+                   
+                        <a href="#">Contactos</a>
+                        ·
+                   
+                        <a href="#">Sobre Nos</a>
+                    <p>Company Name &copy; 2015</p>
+                </div>
+            </div>
+
+
+
+
+
+            <%--  <div class="row">
+                    <div style="float: left">
+                        <ol class="breadcrumb container-fluid" runat="server">
+                            <li id="li_home_footer" runat="server"><a href="/Index.aspx">Pagina Principal</a></li>
+                            <li id="li_ideas_footer" runat="server"><a href="/Project/Ideas.aspx">Minhas Ideas</a></li>
+                            <li id="li_projetos_footer" runat="server"><a href="/Project/Projetos.aspx">Projetos</a></li>
+                            <li id="li_contactos_footer" runat="server"><a href="/Project/Contactos.aspx">Contactos</a></li>
+                            <li id="li_sobre_footer" runat="server"><a href="/Project/Sobre.aspx">Sobre Nos</a></li>
+                            <li id="li_backoffice_footer" runat="server"><a href="/BackOffice/BackOffice.aspx">BackOffice</a></li>
+                        </ol>
+                    </div>
+                    <div class="social-div">
+                        <img src="/Content/Images/Logos/facebook_logo.png" width="36" height="36" />
+                        <img src="/Content/Images/Logos/twitter_logo.png" width="36" height="36" />
+                        <img src="/Content/Images/Logos/google_logo.png" width="36" height="36" />
+                    </div>
+                    <ul class="nav pull-right scroll-top">
+  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
+                </div>--%>
+        </footer>
     </form>
 </body>
 </html>

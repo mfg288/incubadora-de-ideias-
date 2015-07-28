@@ -20,12 +20,22 @@ namespace Incubadora_Ideias.Account
             var avatarName = Email.Text + Path.GetExtension(inp_avatar.Value.ToString());
             var tipoUser = true;
 
+            if (rb_empresa.Checked)
+            {
+                tipoUser = false;
+            }
 
             var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text, IdSecret = Int32.Parse(ddl_secret.SelectedValue), SecretAnswer = tb_scrt_resp.Text, Foto = "/users_Avatars/" + avatarName, Pessoal = tipoUser, IdPais = Int32.Parse(ddl_pais.SelectedValue), IdEstado = 1, PhoneNumber = tb_phone.Text };
             IdentityResult result = manager.Create(user, Password.Text);
             if (result.Succeeded)
             {
+
                 manager.AddToRole(user.Id, "User");
+                if (inp_avatar.PostedFile != null)
+                {
+                    string tempVar = "~/Content/Images/users_Avatars/" + avatarName;
+                    inp_avatar.PostedFile.SaveAs(Server.MapPath(tempVar));
+                }
 
                 // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
                 //string code = manager.GenerateEmailConfirmationToken(user.Id);

@@ -184,8 +184,12 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\BootstrapSocial\bootstrap-social.css" />
     <Content Include="Content\Error.css" />
     <Content Include="Content\FileInput\fileinput.min.css" />
+    <Content Include="Content\FontAwesome\css\font-awesome.css" />
+    <Content Include="Content\FontAwesome\css\font-awesome.min.css" />
+    <Content Include="Content\FontAwesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\Images\FileInput\loading-sm.gif" />
     <Content Include="Content\Images\FileInput\loading.gif" />
     <Content Include="Content\Images\Logos\facebook_logo.png" />
@@ -214,6 +218,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\BootstrapSocial\bootstrap-social.less" />
+    <Content Include="Content\FontAwesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\FontAwesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\FontAwesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\FontAwesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\FontAwesome\fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
@@ -251,6 +261,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="testpage.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -422,6 +433,13 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="testpage.aspx.cs">
+      <DependentUpon>testpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testpage.aspx.designer.cs">
+      <DependentUpon>testpage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

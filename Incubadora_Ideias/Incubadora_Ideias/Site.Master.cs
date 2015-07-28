@@ -117,7 +117,7 @@ namespace Incubadora_Ideias
                     break;
                 case "account_register_aspx":
                     HtmlGenericControl register_control = (HtmlGenericControl)loginview_id.FindControl("li_register_navbar");
-                    register_control.Attributes.Add("class", "active");
+                    //register_control.Attributes.Add("class", "active");
                     break;
                 case "account_login_aspx":
                     HtmlGenericControl login_control = (HtmlGenericControl)loginview_id.FindControl("li_login_navbar");
