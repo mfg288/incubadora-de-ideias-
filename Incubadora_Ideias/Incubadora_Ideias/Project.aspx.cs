@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -10,11 +11,10 @@ using System.Web.UI.WebControls;
 
 namespace Incubadora_Ideias
 {
-    public partial class testpage : System.Web.UI.Page
+    public partial class Project : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
             //<li><a href="#">Minhas Ideas</a></li>
             //<li><a href="/Projetos.aspx">Projetos</a></li>
 
@@ -36,7 +36,7 @@ namespace Incubadora_Ideias
                         HtmlGenericControl li = new HtmlGenericControl("li");
                         ul_badges.Controls.Add(li);
                         li.InnerText = reader[1].ToString();
-                        li.Attributes.Add("class", "list-group-item");
+                        li.Attributes.Add("class", "list-group-item tag");
                         li.Attributes.Add("id", reader[0].ToString());
 
                         HtmlGenericControl span = new HtmlGenericControl("span");
@@ -48,6 +48,12 @@ namespace Incubadora_Ideias
 
                 con.Close();
             }
+
+
         }
-        }
+
+
+
+        
     }
+}

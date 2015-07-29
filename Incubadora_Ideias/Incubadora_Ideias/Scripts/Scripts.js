@@ -46,3 +46,23 @@ setInterval(function () {
     }
 }, 250);
 bumpIt();
+
+
+
+/*search tags*/
+$(document).ready(function () {
+    $('#inp_search').on('keyup', function () {
+        var searchText = $(this).val();
+        $('.tagList li.tag').each(function () {
+            var currentLiText = $(this).clone().children().remove().end().text().toLowerCase(),
+                    showCurrentLi = currentLiText.indexOf(searchText) !== -1;
+            $(this).toggle(showCurrentLi);
+        });
+    });
+});
+
+
+
+
+
+
