@@ -13,12 +13,12 @@ namespace Incubadora_Ideias {
     public partial class Project {
         
         /// <summary>
-        /// ul_badges control.
+        /// badgeMenu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ul_badges;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl badgeMenu;
     }
 }

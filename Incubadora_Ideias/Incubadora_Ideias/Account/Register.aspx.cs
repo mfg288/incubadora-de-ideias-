@@ -16,8 +16,8 @@ namespace Incubadora_Ideias.Account
         {
             var manager = Context.GetOwinContext().GetUserManager<ApplicationUserManager>();
             var signInManager = Context.GetOwinContext().Get<ApplicationSignInManager>();
-
-            var avatarName = Email.Text + Path.GetExtension(inp_avatar.Value.ToString());
+            var extencion = Path.GetExtension(inp_avatar.Value.ToString());
+            var avatarName = Email.Text + extencion;
             var tipoUser = true;
 
             if (rb_empresa.Checked)
@@ -31,7 +31,7 @@ namespace Incubadora_Ideias.Account
             {
 
                 manager.AddToRole(user.Id, "User");
-                if (inp_avatar.PostedFile != null)
+                if ((inp_avatar.PostedFile != null) && (extencion == ".jpg" || extencion == ".png" || extencion == ".gif" || extencion == ".jpeg"))
                 {
                     string tempVar = "~/Content/Images/users_Avatars/" + avatarName;
                     inp_avatar.PostedFile.SaveAs(Server.MapPath(tempVar));

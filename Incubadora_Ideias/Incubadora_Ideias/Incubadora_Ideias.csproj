@@ -202,6 +202,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Content\StarRating\star-rating.min.css" />
     <Content Include="Content\StyleSheet.css" />
+    <Content Include="CreateProject.aspx" />
     <Content Include="Errors\404.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Icon.png" />
@@ -399,6 +400,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateProject.aspx.cs">
+      <DependentUpon>CreateProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateProject.aspx.designer.cs">
+      <DependentUpon>CreateProject.aspx</DependentUpon>
     </Compile>
     <Compile Include="Errors\404.aspx.cs">
       <DependentUpon>404.aspx</DependentUpon>

@@ -205,3 +205,17 @@ html {
 .active {
     font-weight: bold;
 }
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------*/
+.tags-sidebar {
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    height: 300px;
+}
+
+

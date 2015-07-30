@@ -15,45 +15,61 @@ namespace Incubadora_Ideias
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //<li><a href="#">Minhas Ideas</a></li>
-            //<li><a href="/Projetos.aspx">Projetos</a></li>
-
-
-
-
-
-
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString))
             {
-                SqlCommand command = new SqlCommand("SELECT Id, Tag, count(*) as num FROM Tags,TagsIdeia where Tags.Id =TagsIdeia.IdTag group by Tags.Id, Tags.Tag order by num DESC;", con);
+                SqlCommand tagsIdea = new SqlCommand("SELECT Id, Tag, count(*) as num FROM Tags,TagsIdeia where Tags.Id =TagsIdeia.IdTag group by Tags.Id, Tags.Tag order by num DESC;", con);
+                SqlCommand allTagsNum = new SqlCommand("SELECT COUNT(*) FROM Tags;", con);
+                try
+                {
+                    HtmlGenericControl a = new HtmlGenericControl("a");
+                    badgeMenu.Controls.Add(a);
 
+                    a.InnerText = "Todos";
+                    a.Attributes.Add("class", "list-group-item");
+                    a.Attributes.Add("href", "Project.aspx");
+
+                    HtmlGenericControl span = new HtmlGenericControl("span");
+                    span.Attributes.Add("class", "badge");
+                    con.Open();
+
+                    span.InnerText = allTagsNum.ExecuteScalar().ToString();
+                    a.Controls.Add(span);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    con.Close();
+                }
                 con.Open();
-                using (SqlDataReader reader = command.ExecuteReader())
+                using (SqlDataReader reader = tagsIdea.ExecuteReader())
                 {
                     // while there is another record present
                     while (reader.Read())
                     {
-                        HtmlGenericControl li = new HtmlGenericControl("li");
-                        ul_badges.Controls.Add(li);
-                        li.InnerText = reader[1].ToString();
-                        li.Attributes.Add("class", "list-group-item tag");
-                        li.Attributes.Add("id", reader[0].ToString());
+                        HtmlGenericControl a = new HtmlGenericControl("a");
+                        badgeMenu.Controls.Add(a);
+
+                        a.InnerText = reader[1].ToString();
+                        a.Attributes.Add("class", "list-group-item");
+                        a.Attributes.Add("href", "Project.aspx?tagId=" + reader[0].ToString());
+                        a.Attributes.Add("id", reader[0].ToString());
 
                         HtmlGenericControl span = new HtmlGenericControl("span");
                         span.Attributes.Add("class", "badge");
                         span.InnerText = reader[2].ToString();
-                        li.Controls.Add(span);
+                        a.Controls.Add(span);
                     }
                 }
-
                 con.Close();
             }
 
 
+
+
+
         }
-
-
-
-        
     }
 }
