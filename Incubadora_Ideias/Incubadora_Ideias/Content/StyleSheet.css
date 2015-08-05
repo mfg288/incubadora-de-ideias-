@@ -215,7 +215,58 @@ html {
 /*-------------------------------------------------------------------------*/
 .tags-sidebar {
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    height: 300px;
 }
 
 
+
+
+
+@media screen and (max-width: 767px) {
+    .row-offcanvas {
+        position: relative;
+        -webkit-transition: all .25s ease-out;
+        -o-transition: all .25s ease-out;
+        transition: all .25s ease-out;
+    }
+
+    .row-offcanvas-left {
+        left: 0;
+    }
+
+        .row-offcanvas-left .sidebar-offcanvas {
+            left: -50%; /* 6 columns */
+        }
+
+        .row-offcanvas-left.active {
+            left: 50%; /* 6 columns */
+        }
+
+    .sidebar-offcanvas {
+        position: absolute;
+        top: 0;
+        width: 50%; /* 6 columns */
+    }
+}
+
+
+
+
+
+
+.item.list-group-item .thumbnail {
+    height: 150px;
+    margin: 0px;
+    overflow: auto
+}
+
+
+.item.list-group-item {
+    border: 0 none;
+    box-shadow: none;
+    width: 100%;
+}
+
+    .item.list-group-item img {
+        float: left;
+        clear: both;
+    }

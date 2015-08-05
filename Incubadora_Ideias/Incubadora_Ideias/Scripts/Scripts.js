@@ -62,8 +62,35 @@ $(document).ready(function () {
 });
 
 
+$(document).ready(function () {
+    $('[data-toggle="offcanvas"]').click(function () {
+        $('.row-offcanvas').toggleClass('active')
+    });
 
+
+    $('.tags-sidebar').height($('#products').height());
+});
 
 
 
 /*--------------------------------------------------------------------------------------------------------------------*/
+$(document).ready(function () {
+    $('#list').click(function (event) {
+        event.preventDefault();
+        $('#products .item').addClass('list-group-item');
+        $('#products .item').removeClass('grid-group-item');
+        $('#list').addClass('active');
+        $('#grid').removeClass('active');
+    });
+
+    $('#grid').click(function (event) {
+        event.preventDefault();
+        $('#products .item').removeClass('list-group-item');
+        $('#products .item').addClass('grid-group-item');
+        $('#grid').addClass('active');
+        $('#list').removeClass('active');
+
+    });
+});
+
+
