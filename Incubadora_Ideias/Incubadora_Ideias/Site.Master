@@ -20,6 +20,8 @@
     <link href="Content/StarRating/star-rating.min.css" rel="stylesheet" />
     <link href="Content/FontAwesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="Content/BootstrapSocial/bootstrap-social.css" rel="stylesheet" />
+    <link href="Content/Selectize/selectize.css" rel="stylesheet" />
+    <link href="Content/Selectize/selectize.default.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">

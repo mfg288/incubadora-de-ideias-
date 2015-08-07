@@ -25,7 +25,7 @@ namespace Incubadora_Ideias.Account
                 tipoUser = false;
             }
 
-            var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text, IdSecret = Int32.Parse(ddl_secret.SelectedValue), SecretAnswer = tb_scrt_resp.Text, Foto = "/users_Avatars/" + avatarName, Pessoal = tipoUser, IdPais = Int32.Parse(ddl_pais.SelectedValue), IdEstado = 1, PhoneNumber = tb_phone.Text };
+            var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text, IdSecret = Int32.Parse(ddl_secret.SelectedValue), SecretAnswer = tb_scrt_resp.Text, Foto = "/Content/Images/users_Avatars/" + avatarName, Pessoal = tipoUser, IdPais = Int32.Parse(ddl_pais.SelectedValue), IdEstado = 1, PhoneNumber = tb_phone.Text };
             IdentityResult result = manager.Create(user, Password.Text);
             if (result.Succeeded)
             {

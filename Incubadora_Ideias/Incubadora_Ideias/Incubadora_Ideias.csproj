@@ -198,6 +198,8 @@
     <Content Include="Content\Images\Logos\twitter_logo.png" />
     <Content Include="Content\Images\User.png" />
     <Content Include="Content\Selectize\selectize.bootstrap3.css" />
+    <Content Include="Content\Selectize\selectize.css" />
+    <Content Include="Content\Selectize\selectize.default.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\StarRating\star-rating.min.css" />
     <Content Include="Content\StyleSheet.css" />
@@ -467,6 +469,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\Images\users_Avatars\" />
+    <Folder Include="Ideia\" />
+    <Folder Include="Test\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -11,7 +11,7 @@ input[type=number]::-webkit-outer-spin-button {
 /*---------------------------------------------N-A-V-B-A-R-----------------------------------------------------*/
 /*fix navbar over content*/
 body {
-    padding-top: 65px;
+    padding-top: 80px;
 }
 
 /*bigger navbar (height)*/
@@ -256,7 +256,7 @@ html {
 .item.list-group-item .thumbnail {
     height: 150px;
     margin: 0px;
-    overflow: auto
+    overflow: auto;
 }
 
 
@@ -270,3 +270,17 @@ html {
         float: left;
         clear: both;
     }
+
+
+
+
+
+
+
+
+
+
+
+textarea {
+    resize: none;
+}

@@ -1,8 +1,26 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="testpage.aspx.cs" Inherits="Incubadora_Ideias.testpage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <br />
+    <br />
+    <br />
+ 
 
-    <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <%--    <div class="container">
         <h2>Dynamic Tabs</h2>
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
@@ -86,13 +104,5 @@
 
 
 
-
-
-
-
-
-
-
-
-
+    --%>
 </asp:Content>
