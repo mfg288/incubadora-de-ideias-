@@ -1,0 +1,1 @@
+﻿select * from tblStudents where (Name like '%' @search + '%')

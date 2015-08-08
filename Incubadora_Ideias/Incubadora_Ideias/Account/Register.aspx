@@ -6,54 +6,12 @@
         <asp:Literal runat="server" ID="ErrorMessage" />
     </p>
 
-
-
-    <div class="form-horizontal">
-        <div class="form-group">
-            <label class="control-label col-sm-2" for="email">Email:</label>
-            <div class="col-sm-2">
-                <input type="email" class="form-control" id="email" placeholder="Enter email">
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-sm-2" for="pwd">Password:</label>
-            <div class="col-sm-2">
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-sm-2" for="sel1">Select list (select one):</label>
-            <div class="col-sm-2">
-                <asp:DropDownList class="form-control" ID="sel1" runat="server">
-                    <asp:ListItem>asdasd</asp:ListItem>
-                </asp:DropDownList>
-            </div>
-        </div>
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
     <div class="form-horizontal">
         <h4>Create a new account</h4>
         <hr />
-        <%--        <asp:ValidationSummary runat="server" CssClass="text-danger" />--%>
-
+        <asp:ValidationSummary runat="server" CssClass="text-danger" />
+        
         <!--Email-->
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-md-2 control-label">Email</asp:Label>
@@ -174,4 +132,7 @@
             </div>
         </div>
     </div>
+
+
+
 </asp:Content>

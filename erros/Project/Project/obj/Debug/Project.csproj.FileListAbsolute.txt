@@ -1,0 +1,156 @@
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Project.dll.config
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Project.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Project.pdb
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Antlr3.Runtime.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\AspNet.ScriptManager.bootstrap.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\AspNet.ScriptManager.jQuery.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\EntityFramework.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\EntityFramework.SqlServer.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.AspNet.FriendlyUrls.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.Security.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.Security.Google.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.ScriptManager.MSAjax.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.ScriptManager.WebForms.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Web.Infrastructure.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Newtonsoft.Json.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Owin.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\System.Web.Optimization.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\System.Web.Providers.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\WebGrease.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\System.Web.Optimization.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Antlr3.Runtime.pdb
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Newtonsoft.Json.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.AspNet.FriendlyUrls.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\EntityFramework.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\EntityFramework.SqlServer.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\System.Web.Providers.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.Security.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.Security.Google.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\obj\Debug\Project.dll
+c:\users\simbol\documents\visual studio 2013\Projects\Project\Project\obj\Debug\Project.pdb
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Project.dll.config
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Project.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Project.pdb
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Antlr3.Runtime.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\EntityFramework.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\EntityFramework.SqlServer.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.Security.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Newtonsoft.Json.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Owin.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\System.Web.Optimization.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\System.Web.Providers.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\WebGrease.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\System.Web.Optimization.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Antlr3.Runtime.pdb
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Newtonsoft.Json.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\EntityFramework.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\EntityFramework.SqlServer.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\System.Web.Providers.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.Security.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\obj\Debug\Project.dll
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Project\Project\obj\Debug\Project.pdb
+C:\Users\mfg\Desktop\Project\Project\bin\Project.dll.config
+C:\Users\mfg\Desktop\Project\Project\bin\Project.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Project.pdb
+C:\Users\mfg\Desktop\Project\Project\bin\Antlr3.Runtime.dll
+C:\Users\mfg\Desktop\Project\Project\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\mfg\Desktop\Project\Project\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\mfg\Desktop\Project\Project\bin\EntityFramework.dll
+C:\Users\mfg\Desktop\Project\Project\bin\EntityFramework.SqlServer.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.Security.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Newtonsoft.Json.dll
+C:\Users\mfg\Desktop\Project\Project\bin\Owin.dll
+C:\Users\mfg\Desktop\Project\Project\bin\System.Web.Optimization.dll
+C:\Users\mfg\Desktop\Project\Project\bin\System.Web.Providers.dll
+C:\Users\mfg\Desktop\Project\Project\bin\WebGrease.dll
+C:\Users\mfg\Desktop\Project\Project\bin\System.Web.Optimization.xml
+C:\Users\mfg\Desktop\Project\Project\bin\Antlr3.Runtime.pdb
+C:\Users\mfg\Desktop\Project\Project\bin\Newtonsoft.Json.xml
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\mfg\Desktop\Project\Project\bin\EntityFramework.xml
+C:\Users\mfg\Desktop\Project\Project\bin\EntityFramework.SqlServer.xml
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\mfg\Desktop\Project\Project\bin\System.Web.Providers.xml
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.xml
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.Security.xml
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\mfg\Desktop\Project\Project\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\mfg\Desktop\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+C:\Users\mfg\Desktop\Project\Project\obj\Debug\Project.dll
+C:\Users\mfg\Desktop\Project\Project\obj\Debug\Project.pdb
