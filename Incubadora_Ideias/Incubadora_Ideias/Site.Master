@@ -12,7 +12,7 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:BundleReference runat="server" Path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/Content/Images/Logos/Logo.png" rel="shortcut icon" type="image/x-icon" />
 
     <link href="Content/StyleSheet.css" rel="stylesheet" />
     <link href="Content/FileInput/fileinput.min.css" rel="stylesheet" />
@@ -20,6 +20,8 @@
     <link href="Content/StarRating/star-rating.min.css" rel="stylesheet" />
     <link href="Content/FontAwesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="Content/BootstrapSocial/bootstrap-social.css" rel="stylesheet" />
+    <link href="Content/Selectize/selectize.css" rel="stylesheet" />
+    <link href="Content/Selectize/selectize.default.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
@@ -45,10 +47,70 @@
                 <asp:ScriptReference Path="~/Scripts/Selectize/selectize.min.js" />
                 <asp:ScriptReference Path="~/Scripts/StarRating/star-rating.min.js" />
                 <asp:ScriptReference Path="~/Scripts/Scripts.js" />
-                <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
 
+        <%--Error report--%>
+        <div class="modal fade" id="report_error" runat="server" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Reportar Erro</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inp_title" class="col-sm-2 control-label">Título</label>
+                                    <div class="col-sm-10">
+                                        <input id="inp_title" runat="server" class="form-control" type="text" autocomplete="off" />
+                                        <asp:RequiredFieldValidator
+                                            ControlToValidate="inp_title"
+                                            runat="server"
+                                            ForeColor="#c60000"
+                                            Display="Dynamic"
+                                            Text="Por favor insira um Título" ClientValidationFunction='mycheck' />
+                                        <asp:RegularExpressionValidator
+                                            ControlToValidate="inp_title"
+                                            Display="Dynamic"
+                                            runat="server"
+                                            ForeColor="#c60000"
+                                            ValidationExpression=".{3,25}"
+                                            Text="Por favor insira um valor entre 3 e 25 caracteres" ClientValidationFunction='mycheck' />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ta_descript" class="col-sm-2 control-label">Descrição</label>
+                                    <div class="col-sm-10">
+                                        <textarea id="ta_descript" class="form-control" rows="5" runat="server"></textarea>
+                                        <asp:RequiredFieldValidator
+                                            ControlToValidate="ta_descript"
+                                            Text="Por favor insira uma Descrição"
+                                            runat="server"
+                                            ForeColor="#c60000"
+                                            Display="Dynamic" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="fi_error" class="col-sm-2 control-label">Anexos</label>
+                                    <div class="col-sm-10">
+                                        <asp:FileUpload ID="fu_error" runat="server" AllowMultiple="true" />(Opcional)
+                                        <%--                                         <input id="fi_error1" type="file" multiple runat="server" clientidmode="Static">(Opcional)--%>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <asp:Button runat="server" Text="Cancelar" CssClass="btn btn-default" data-dismiss="modal" />
+                        <asp:Button runat="server" Text="Guardar" CssClass="btn btn-primary" OnClick="Report_Erro" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%-- Navbar --%>
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -58,13 +120,13 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="Index.aspx">
-                        <img alt="Brand" src="/Content/Images/Logos/Logo_name.png" height="24">
+                        <img alt="Brand" src="/Content/Images/Logos/Logo.png" height="35">
                     </a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li id="li_home_navbar" runat="server"><a runat="server" href="~/Index.aspx"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp&nbspPrincipal</a></li>
-                        <li id="li_ideas_navbar" runat="server"><a runat="server" href="~/Project/Ideas.aspx"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp&nbspMinhas Ideas</a></li>
+                        <li id="li_ideas_navbar" runat="server"><a runat="server" href="~/Project.aspx"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp&nbspMinhas Ideas</a></li>
                         <li id="li_projetos_navbar" runat="server"><a runat="server" href="~/Project/Projetos.aspx"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>&nbsp&nbspProjetos</a></li>
                         <li id="li_contactos_navbar" runat="server"><a runat="server" href="~/Project/Contactos.aspx"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp&nbspContactos</a></li>
                         <li id="li_sobre_navbar" runat="server"><a runat="server" href="~/Project/Sobre.aspx"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>&nbsp&nbspSobre Nos</a></li>
@@ -89,17 +151,29 @@
                 </div>
             </div>
         </div>
+
+        <%-- Conteiner --%>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
         </div>
 
-        <footer class="footer">
 
+
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted">Place sticky footer content here.</p>
+            </div>
+        </footer>
+
+
+
+
+        <%-- Footer --%>
+        <footer class="footer">
             <div class="container body-content">
                 <div class="footer-right">
-
                     <a class="btn btn-social-icon btn-facebook btn-sm">
                         <i class="fa fa-facebook"></i>
                     </a><a class="btn btn-social-icon btn-google btn-sm">
@@ -107,23 +181,20 @@
                     </a><a class="btn btn-social-icon btn-twitter btn-sm">
                         <i class="fa fa-twitter"></i>
                     </a>
-
-                    <p>Reportar Bug</p>
-
+                    <p>
+                        <button type="button" runat="server" id="bn_report" class="btn btn-link report-error" data-toggle="modal" data-target="#report_error">Reportar Bug</button>
+                    </p>
                 </div>
                 <div class="footer-left">
                     <p class="footer-links">
                         <a href="#">Principal</a>
                         ·
-                   
                         <a href="#">Minhas Ideias</a>
                         ·
-                    <a href="#">Projetos</a>
+                        <a href="#">Projetos</a>
                         ·
-                   
                         <a href="#">Contactos</a>
                         ·
-                   
                         <a href="#">Sobre Nos</a>
                     <p>Company Name &copy; 2015</p>
                 </div>
@@ -144,17 +215,12 @@
                             <li id="li_backoffice_footer" runat="server"><a href="/BackOffice/BackOffice.aspx">BackOffice</a></li>
                         </ol>
                     </div>
-                    <div class="social-div">
-                        <img src="/Content/Images/Logos/facebook_logo.png" width="36" height="36" />
-                        <img src="/Content/Images/Logos/twitter_logo.png" width="36" height="36" />
-                        <img src="/Content/Images/Logos/google_logo.png" width="36" height="36" />
-                    </div>
+                  </div>
+  
                     <ul class="nav pull-right scroll-top">
-  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
-</ul>
-                </div>--%>
+                      <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+                    </ul>--%>
         </footer>
-        <script></script>
     </form>
 </body>
 </html>

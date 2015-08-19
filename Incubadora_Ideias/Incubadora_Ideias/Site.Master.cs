@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Security.Claims;
 using System.Security.Principal;
 using System.Web;
@@ -7,6 +10,8 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
+using Microsoft.AspNet.Identity;
+using System.Diagnostics;
 
 namespace Incubadora_Ideias
 {
@@ -71,7 +76,11 @@ namespace Incubadora_Ideias
         {
             //Debug.Write(thisURL); send to console debug
 
-
+            if (!HttpContext.Current.User.Identity.IsAuthenticated)
+            {
+                report_error.Visible = false;
+                bn_report.Visible = false;
+            }
 
 
             //quando admin mostrar de resto esconder/apagar
@@ -134,6 +143,72 @@ namespace Incubadora_Ideias
         {
             Context.GetOwinContext().Authentication.SignOut();
         }
-    }
 
+        protected void Report_Erro(object sender, EventArgs e)
+        {
+            try
+            {
+                List<string> arrList = new List<string>();
+                if (fu_error.HasFiles)
+                {
+                    foreach (HttpPostedFile file in fu_error.PostedFiles)
+                    {
+                        //file.SaveAs(System.IO.Path.Combine(Server.MapPath("~/Images/"),file.FileName));
+                        arrList.Add(file.FileName);
+
+                    }
+                }
+
+                DataTable Attach = new DataTable();
+                Attach.Columns.Add("file");
+                foreach (string file in arrList)
+                {
+                    Attach.Rows.Add(file);
+                }
+                using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand("dbo.addError", con))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;//dizer que é stored procedure
+                        //parametros
+                        cmd.Parameters.AddWithValue("@titulo", inp_title.Value);
+                        cmd.Parameters.AddWithValue("@descript", ta_descript.Value);
+                        cmd.Parameters.AddWithValue("@IdUser", HttpContext.Current.User.Identity.GetUserId().ToString());
+
+                        SqlParameter tagsParam = cmd.Parameters.AddWithValue("@array", Attach);
+                        tagsParam.SqlDbType = SqlDbType.Structured;
+
+                        SqlParameter erroId = new SqlParameter("@IdErro",System.Data.SqlDbType.Int);
+                        erroId.Direction = System.Data.ParameterDirection.Output;
+                        cmd.Parameters.Add(erroId);
+
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                       
+                        if (fu_error.HasFiles)
+                        {
+                            string EmployeeId = erroId.Value.ToString();
+                            System.IO.Directory.CreateDirectory(Server.MapPath("~/Files/Erros/" + EmployeeId));
+                            foreach (HttpPostedFile file in fu_error.PostedFiles)
+                            {
+                                file.SaveAs(Server.MapPath("~/Files/Erros/" + EmployeeId + "/" + file.FileName));
+                            }
+                        }
+                    }
+                }
+
+            }
+            catch (SqlException ex)
+            {
+                //Display Error message
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Houve um problema na submissão de erro')", true);
+
+            }
+            finally
+            {
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Erro foi submetido com sucesso')", true);
+
+            }
+        }
+    }
 }

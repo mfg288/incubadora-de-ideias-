@@ -1,0 +1,11 @@
+reportar erros
+	questoes
+		todos podem reportar ou so registados?
+	falta
+		mensagem de erro mais bonita?
+		estrelas nos campos obrigatorios
+		validacao red border on focus lost check if validated	
+	
+	
+	
+	

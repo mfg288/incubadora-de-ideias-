@@ -28,77 +28,77 @@ C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ide
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\System.Web.Optimization.dll
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\System.Web.Providers.dll
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\WebGrease.dll
-C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\System.Web.Optimization.xml
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Antlr3.Runtime.pdb
-C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Newtonsoft.Json.xml
-C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\EntityFramework.xml
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\EntityFramework.SqlServer.xml
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\System.Web.Providers.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.xml
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.xml
-C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Facebook.xml
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Facebook.xml
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\obj\Debug\Incubadora_Ideias.csprojResolveAssemblyReference.cache
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Newtonsoft.Json.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\System.Web.Optimization.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\bin\System.Web.Providers.xml
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\obj\Debug\Incubadora_Ideias.dll
 C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\obj\Debug\Incubadora_Ideias.pdb
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Incubadora_Ideias.dll.config
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Incubadora_Ideias.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Incubadora_Ideias.pdb
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Antlr3.Runtime.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\AspNet.ScriptManager.bootstrap.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\AspNet.ScriptManager.jQuery.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\EntityFramework.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\EntityFramework.SqlServer.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.FriendlyUrls.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.ScriptManager.MSAjax.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.ScriptManager.WebForms.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Newtonsoft.Json.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Owin.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\System.Web.Optimization.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\System.Web.Providers.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\WebGrease.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Antlr3.Runtime.pdb
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\EntityFramework.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\EntityFramework.SqlServer.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Newtonsoft.Json.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\System.Web.Optimization.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.FriendlyUrls.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\bin\System.Web.Providers.xml
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\obj\Debug\Incubadora_Ideias.dll
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\obj\Debug\Incubadora_Ideias.pdb
-C:\Users\mfg\Documents\incubadora-de-ideias-4\Incubadora_Ideias\Incubadora_Ideias\obj\Debug\Incubadora_Ideias.csprojResolveAssemblyReference.cache
+C:\Users\SimboL\Documents\incubadora-de-ideias-\Incubadora_Ideias\Incubadora_Ideias\obj\Debug\Incubadora_Ideias.csprojResolveAssemblyReference.cache
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Incubadora_Ideias.dll.config
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Incubadora_Ideias.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Incubadora_Ideias.pdb
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Antlr3.Runtime.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\EntityFramework.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\EntityFramework.SqlServer.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Newtonsoft.Json.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Owin.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\System.Web.Optimization.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\System.Web.Providers.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\WebGrease.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Antlr3.Runtime.pdb
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\EntityFramework.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\EntityFramework.SqlServer.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Newtonsoft.Json.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\System.Web.Optimization.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\bin\System.Web.Providers.xml
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\obj\Debug\Incubadora_Ideias.csprojResolveAssemblyReference.cache
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\obj\Debug\Incubadora_Ideias.dll
+C:\Users\SimboL\Desktop\New folder (2)\Incubadora_Ideias\Incubadora_Ideias\obj\Debug\Incubadora_Ideias.pdb
