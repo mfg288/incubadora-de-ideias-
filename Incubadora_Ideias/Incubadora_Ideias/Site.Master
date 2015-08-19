@@ -163,16 +163,6 @@
 
         <footer class="footer">
             <div class="container">
-                <p class="text-muted">Place sticky footer content here.</p>
-            </div>
-        </footer>
-
-
-
-
-        <%-- Footer --%>
-        <footer class="footer">
-            <div class="container body-content">
                 <div class="footer-right">
                     <a class="btn btn-social-icon btn-facebook btn-sm">
                         <i class="fa fa-facebook"></i>
@@ -199,12 +189,21 @@
                     <p>Company Name &copy; 2015</p>
                 </div>
             </div>
+        </footer>
+
+
+
+
+        <%-- Footer --%>
+<%--        <footer class="footer">
+            <div class="container body-content">
+            </div>
 
 
 
 
 
-            <%--  <div class="row">
+              <div class="row">
                     <div style="float: left">
                         <ol class="breadcrumb container-fluid" runat="server">
                             <li id="li_home_footer" runat="server"><a href="/Index.aspx">Pagina Principal</a></li>
@@ -219,8 +218,8 @@
   
                     <ul class="nav pull-right scroll-top">
                       <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
-                    </ul>--%>
-        </footer>
+                    </ul>
+        </footer>--%>
     </form>
 </body>
 </html>
