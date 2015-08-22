@@ -30,6 +30,7 @@ namespace Incubadora_Ideias.Models
         public string Foto { get; set; }
         public Boolean Pessoal { get; set; }
         public int IdPais { get; set; }
+        public int IdEstado { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>

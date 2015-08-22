@@ -7,6 +7,9 @@ using Microsoft.AspNet.Identity.Owin;
 using Owin;
 using Incubadora_Ideias.Models;
 using System.IO;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Web.UI.WebControls;
 
 namespace Incubadora_Ideias
 {
@@ -14,50 +17,156 @@ namespace Incubadora_Ideias
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ClientScript.RegisterClientScriptBlock(this.GetType(),
+             "CounterScript", "$(document).ready(function () { $('#ul_tabs a[href=\"#menu1\"]').tab('show') });", true);
 
-        }
-        public void CreateUser_Click(object sender, EventArgs e) { 
-
-             var manager = Context.GetOwinContext().GetUserManager<ApplicationUserManager>();
-            var signInManager = Context.GetOwinContext().Get<ApplicationSignInManager>();
-            var extencion = Path.GetExtension(inp_avatar.Value.ToString());
-            var avatarName =  Email.Text + extencion;
-            var tipoUser = true;
-
-            if (rb_empresa.Checked)
+            foreach (GridViewRow row in GridView2.Rows)
             {
-                tipoUser = false;
-            }
-
-            var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text, IdSecret = Int32.Parse(ddl_secret.SelectedValue), SecretAnswer = tb_scrt_resp.Text, Foto = "/users_Avatars/" + avatarName, Pessoal = tipoUser, IdPais = Int32.Parse(ddl_pais.SelectedValue), IdEstado = 1, PhoneNumber = tb_phone.Text };
-            IdentityResult result = manager.Create(user, Password.Text);
-            if (result.Succeeded)
-            {
-
-                manager.AddToRole(user.Id, "User");
-                if ((inp_avatar.PostedFile != null) && (extencion == ".jpg" || extencion == ".png" || extencion == ".gif" || extencion == ".jpeg"))
+                Button actdesactbtn = (Button)row.FindControl("actDesact");
+                if (actdesactbtn.Attributes["data-activo"] == "True")
                 {
-                    string tempVar = "~/Content/Images/users_Avatars/" + avatarName;
-                    inp_avatar.PostedFile.SaveAs(Server.MapPath(tempVar));
+                    actdesactbtn.CssClass = "btn btn-danger";
+                    actdesactbtn.Text = "Desativar";
+                }
+                else
+                {
+                    actdesactbtn.CssClass = "btn btn-success";
+                    actdesactbtn.Text = "Ativar";
                 }
 
-                // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
-                //string code = manager.GenerateEmailConfirmationToken(user.Id);
-                //string callbackUrl = IdentityHelper.GetUserConfirmationRedirectUrl(code, user.Id, Request);
-                //manager.SendEmail(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>.");
+            }
 
-                signInManager.SignIn(user, isPersistent: false, rememberBrowser: false);
-                IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
-            }
-            else
+        }
+        protected void GravarUser(object sender, EventArgs e)
+        {
+
+
+        }
+        protected void Editar(object sender, EventArgs e)
+        {
+            try
             {
-                ErrorMessage.Text = result.Errors.FirstOrDefault();
+
+                using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM AspNetUsers", conn))
+                    {
+                        conn.Open();
+
+                        SqlDataReader reader = cmd.ExecuteReader();
+
+                        if (reader.HasRows)
+                        {
+                            while (reader.Read())
+                            {
+                                Console.WriteLine("Id = ", reader["Email"]);
+
+                                //((TextBox)GridView1.FooterRow.FindControl("txtEmail")).Text=reader["Email"];
+                            }
+                        }
+
+                        reader.Close();
+                    }
+                }
             }
-        
-        
-        
+            catch (SqlException ex)
+            {
+                //Log exception
+                //Display Error message
+            }
+
+
+        }
+        protected void Banir(object sender, EventArgs e)
+        {
+
+
+
+        }
+        protected void EstadoTag(object sender, EventArgs e)
+        {
+            // LinkButton lnkedit = sender as LinkButton;
+            // GridViewRow gvrow = lnkedit.NamingContainer as GridViewRow;
+            // int index = gvrow.RowIndex;
+            ////.Visible = true;
+
+
+
+
+        }
+        protected void bt_mudar(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void actDesact_Click(object sender, EventArgs e)
+        {
+          //  ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Record Inserted Successfully')", true);
+
+            Button bt_mudar = (Button)sender;
+            var id = bt_mudar.Attributes["data-id"];
+            var estdado = bt_mudar.Attributes["data-activo"];
+
+            try
+            {
+                using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand("update Ideias set Activo=@activo where id=@id", con))
+                    {
+                        //parametros
+                        cmd.Parameters.AddWithValue("@id", id);
+
+
+                        if (estdado == "True")
+                        {
+                            cmd.Parameters.AddWithValue("@activo", false);
+
+                        }
+                        else
+                        {
+                            cmd.Parameters.AddWithValue("@activo", true);
+                        }
+
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                //Display Error message
+
+            }
+            finally
+            {
+                GridView2.DataBind();
+                foreach (GridViewRow row in GridView2.Rows)
+                {
+                    Button actdesactbtn = (Button)row.FindControl("actDesact");
+                    if (actdesactbtn.Attributes["data-activo"] == "True")
+                    {
+                        actdesactbtn.CssClass = "btn btn-danger";
+                        actdesactbtn.Text = "Desativar";
+                    }
+                    else
+                    {
+                        actdesactbtn.CssClass = "btn btn-success";
+                        actdesactbtn.Text = "Ativar";
+                    }
+
+                }
+                tab_ideia.Attributes.Add("class", "in active");
+                ClientScript.RegisterClientScriptBlock(this.GetType(),
+               "CounterScript", "changtabe()", true);
+                                
+                    
+                     
+                    
+            }
+
         }
     }
 }
+
 
 

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Incubadora_Ideias", "Incubadora_Ideias\Incubadora_Ideias.csproj", "{F68C3A4A-B17C-4C72-96C7-C461717F1B50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backoffice", "Incubadora_Ideias\Backoffice.csproj", "{F68C3A4A-B17C-4C72-96C7-C461717F1B50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

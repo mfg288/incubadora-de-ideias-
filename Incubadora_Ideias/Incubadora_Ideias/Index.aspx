@@ -4,12 +4,14 @@
 
 
 
-    <div class="form-inline">
-        <div class="form-group has-success ">
-            <input type="text" class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status">
-            <span id="inputSuccess4Status" class="sr-only">(success)</span>
-        </div>
-    </div>
+
+
+
+
+
+
+
+
 
 
 

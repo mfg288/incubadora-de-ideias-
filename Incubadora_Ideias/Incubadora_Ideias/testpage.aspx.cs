@@ -14,20 +14,8 @@ namespace Incubadora_Ideias
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-    //        try
-    //        {
-    //             using (SqlConnection connection = SqlConnection(""))
-    //{
-    //           using (SqlCommand command = SqlCommand()
-    //           {
-    //               //open connection + execute command + do something else
-    //           }
-    //}
-    //        }
-    //        catch
-    //        {
-    //            //do something
-    //        }
+
+        
         }
     }
 }

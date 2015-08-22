@@ -1,0 +1,1 @@
+﻿SELECT [SecretAnswer], [Foto], [Pessoal], [Email], [PhoneNumber], [IdPais], [IdEstado], [IdSecret], [Id], [UserName],p.Pais FROM [AspNetUsers],Pais p WHERE IdPais=p.Id ORDER BY [Id], [Email]

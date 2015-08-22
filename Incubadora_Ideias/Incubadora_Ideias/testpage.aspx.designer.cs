@@ -11,5 +11,23 @@ namespace Incubadora_Ideias {
     
     
     public partial class testpage {
+        
+        /// <summary>
+        /// GVerros control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GVerros;
+        
+        /// <summary>
+        /// SqlDErros control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDErros;
     }
 }
