@@ -1,0 +1,160 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Incubadora_Ideias.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="pt">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link href="Content/StyleSheet.css" rel="stylesheet" />
+    <link href="Content/FileInput/fileinput.min.css" rel="stylesheet" />
+    <link href="Content/Selectize/selectize.bootstrap3.css" rel="stylesheet" />
+    <link href="Content/StarRating/star-rating.min.css" rel="stylesheet" />
+    <link href="Content/FontAwesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/BootstrapSocial/bootstrap-social.css" rel="stylesheet" />
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server" EnablePageMethods="true">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <asp:ScriptReference Path="~/Scripts/FileInput/fileinput.min.js" />
+                <asp:ScriptReference Path="~/Scripts/FileInput/fileinput_locale_pt.js" />
+                <asp:ScriptReference Path="~/Scripts/Selectize/selectize.min.js" />
+                <asp:ScriptReference Path="~/Scripts/StarRating/star-rating.min.js" />
+                <asp:ScriptReference Path="~/Scripts/Scripts.js" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="Index.aspx">
+                        <img alt="Brand" src="/Content/Images/Logos/Logo_name.png" height="24">
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li id="li_home_navbar" runat="server"><a runat="server" href="~/Index.aspx"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp&nbspPrincipal</a></li>
+                        <li id="li_ideas_navbar" runat="server"><a runat="server" href="~/Project/Ideas.aspx"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp&nbspMinhas Ideas</a></li>
+                        <li id="li_projetos_navbar" runat="server"><a runat="server" href="~/Project/Projetos.aspx"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>&nbsp&nbspProjetos</a></li>
+                        <li id="li_contactos_navbar" runat="server"><a runat="server" href="~/Project/Contactos.aspx"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp&nbspContactos</a></li>
+                        <li id="li_sobre_navbar" runat="server"><a runat="server" href="~/Project/Sobre.aspx"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>&nbsp&nbspSobre Nos</a></li>
+                        <li id="li_backoffice_navbar" runat="server"><a runat="server" href="~/BackOffice/BackOffice.aspx"><span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span>&nbsp&nbspBackOffice</a></li>
+                    </ul>
+                    <asp:LoginView runat="server" ViewStateMode="Disabled" ID="loginview_id">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li id="li_register_navbar" runat="server"><a runat="server" href="~/Account/Register">Register</a></li>
+                                <li id="li_login_navbar" runat="server"><a runat="server" href="~/Account/Login">Log in</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li id="li_manage_navbar" runat="server"><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+        </div>
+
+        <footer class="footer">
+
+            <div class="container body-content">
+                <div class="footer-right">
+
+                    <a class="btn btn-social-icon btn-facebook btn-sm">
+                        <i class="fa fa-facebook"></i>
+                    </a><a class="btn btn-social-icon btn-google btn-sm">
+                        <i class="fa fa-google"></i>
+                    </a><a class="btn btn-social-icon btn-twitter btn-sm">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+
+                    <p>Reportar Bug</p>
+
+                </div>
+                <div class="footer-left">
+                    <p class="footer-links">
+                        <a href="#">Principal</a>
+                        ·
+                   
+                        <a href="#">Minhas Ideias</a>
+                        ·
+                    <a href="#">Projetos</a>
+                        ·
+                   
+                        <a href="#">Contactos</a>
+                        ·
+                   
+                        <a href="#">Sobre Nos</a>
+                    <p>Company Name &copy; 2015</p>
+                </div>
+            </div>
+
+
+
+
+
+            <%--  <div class="row">
+                    <div style="float: left">
+                        <ol class="breadcrumb container-fluid" runat="server">
+                            <li id="li_home_footer" runat="server"><a href="/Index.aspx">Pagina Principal</a></li>
+                            <li id="li_ideas_footer" runat="server"><a href="/Project/Ideas.aspx">Minhas Ideas</a></li>
+                            <li id="li_projetos_footer" runat="server"><a href="/Project/Projetos.aspx">Projetos</a></li>
+                            <li id="li_contactos_footer" runat="server"><a href="/Project/Contactos.aspx">Contactos</a></li>
+                            <li id="li_sobre_footer" runat="server"><a href="/Project/Sobre.aspx">Sobre Nos</a></li>
+                            <li id="li_backoffice_footer" runat="server"><a href="/BackOffice/BackOffice.aspx">BackOffice</a></li>
+                        </ol>
+                    </div>
+                    <div class="social-div">
+                        <img src="/Content/Images/Logos/facebook_logo.png" width="36" height="36" />
+                        <img src="/Content/Images/Logos/twitter_logo.png" width="36" height="36" />
+                        <img src="/Content/Images/Logos/google_logo.png" width="36" height="36" />
+                    </div>
+                    <ul class="nav pull-right scroll-top">
+  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
+                </div>--%>
+        </footer>
+        <script></script>
+    </form>
+</body>
+</html>

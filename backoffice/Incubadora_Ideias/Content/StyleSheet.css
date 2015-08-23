@@ -1,0 +1,221 @@
+﻿
+/*--------------------------------------------------------CHANGES----------------------------------------------------*/
+/*remove tags in type=numbersss*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/*---------------------------------------------N-A-V-B-A-R-----------------------------------------------------*/
+/*fix navbar over content*/
+body {
+    padding-top: 65px;
+}
+
+/*bigger navbar (height)*/
+.navbar-fixed-top {
+    min-height: 60px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 60px;
+}
+
+@media (max-width: 1000px) {
+    .navbar-nav > li > a {
+        line-height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter,
+.navbar .nav > li.current-menu-item > a,
+.navbar .nav > li.current-menu-ancestor > a {
+    font-size: medium;
+}
+
+/*fix form overflow color-profile navbar*/
+@media (max-width: 1000px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+        .navbar-collapse.collapse {
+            display: none !important;
+        }
+
+    .navbar-nav {
+        float: none !important;
+        margin: 7.5px -15px;
+    }
+
+        .navbar-nav > li {
+            float: none;
+        }
+
+            .navbar-nav > li > a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+
+    .collapsing {
+        overflow: hidden !important;
+    }
+}
+
+
+/*-------------------------------------------------------FOOTER--------------------------------------------------*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+    background-color: #222222;
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+    .footer .footer-left p {
+        color: #8f9296;
+        font-size: 14px;
+    }
+
+    .footer p.footer-links {
+        font-size: 18px;
+        color: #ffffff;
+        margin: 0 0 0px;
+        padding: 0;
+    }
+
+        .footer p.footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+        }
+
+    .footer .footer-right {
+        float: right;
+        margin-top: 6px;
+        max-width: 180px;
+    }
+
+        .footer .footer-right p {
+            text-align: right;
+            color: inherit;
+            font-size: 14px;
+            color: #8f9296;
+        }
+
+        .footer .footer-right a {
+            display: inline-block;
+            border-radius: 2px;
+            line-height: 35px;
+            margin-left: 3px;
+        }
+
+@media (max-width: 800px) {
+    .footer .footer-left,
+    .footer .footer-right {
+        text-align: center;
+    }
+
+    .footer .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+
+        .footer .footer-right p {
+            text-align: center;
+        }
+
+    .footer .footer-left p.footer-links {
+        line-height: 1.5;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*register upload image*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+
+
+
+.active {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------*/
+.tags-sidebar {
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    height: 300px;
+}
+
+
