@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Web;
+using System.Web.Services;
 using System.Web.UI;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
@@ -35,6 +38,104 @@ namespace Incubadora_Ideias.Account
                 loginForm.Visible = false;
                 DisplayEmail.Visible = true;
             }
+        }
+
+
+        [WebMethod]
+        public static string ObtemPerguntaSecreta(string email)
+        {
+
+            var secretQuestion = "";
+            try
+            {
+
+                using (var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString))
+                {
+                    using (var cmd = new SqlCommand("SELECT p.Secret FROM [dbo].[Perguntas] p " +
+                                                           "INNER JOIN [dbo].[AspNetUsers] a ON (p.Id = a.IdSecret)" +
+                                                           "WHERE UserName = @userName", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@userName", email);
+
+                        conn.Open();
+
+                        var reader = cmd.ExecuteReader();
+
+                        if (reader.HasRows)
+                        {
+                            while (reader.Read())
+                            {
+                                secretQuestion = reader["Secret"].ToString();
+                                System.Diagnostics.Debug.Write("Pergunta = " + reader["Secret"]); 
+                            }
+                        }
+
+                        reader.Close();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                //Log exception
+                //Display Error message
+            }
+
+            return secretQuestion;
+        }
+        
+        
+        [WebMethod]
+        public static RecuperarErros VerificaResposta(string resposta, string email)
+        {
+
+            var erro = new RecuperarErros();
+            erro.ErroDescricao = "";
+            try
+            {
+
+                using (var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString))
+                {
+                    using (var cmd = new SqlCommand("SELECT * " +
+                                                    "FROM AspNetUsers a " +
+                                                    "WHERE @SecretAnswer = a.SecretAnswer " +
+                                                    "AND UserName = @userName", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@SecretAnswer", resposta);
+                        cmd.Parameters.AddWithValue("@userName", email);
+
+                        conn.Open();
+
+                        var reader = cmd.ExecuteReader();
+
+                        //Se vierem linhas na query, é porque a resposta está correcta
+                        if (!reader.HasRows)
+                        {
+                            erro.ErroDescricao = "A resposta está incorrecta";
+                            //fazer aparecer uma msg de erro.
+                        }
+                        else
+                        {
+                            var encryptedString = string.Empty;
+                            while (reader.Read())
+                            {
+                                encryptedString = reader["PasswordHash"].ToString();
+                            }
+
+                            const string password = "12345";
+                            var decryptedstring = Helpers.Helper.Decrypt(encryptedString, password);
+                        }
+
+                        reader.Close();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                //Log exception
+                //Display Error message
+            }
+
+            return erro;
         }
     }
 }

@@ -24,9 +24,45 @@
                     </div>
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
-                            <asp:Button runat="server" OnClick="Forgot" Text="Email Link" CssClass="btn btn-default" />
+                            <button type="button" class="btn btn-primary" id="bt_obtemperg" onclick="ObtemPerguntaSecreta()">Recuperar</button>
                         </div>
                     </div>
+                    
+                    
+                    <%--Parte do formulário que tem a resposta à pergunta secreta--%>
+                    
+                    
+                    <div class="form-group">
+                        <asp:Label ID="LabelPergSecreta" runat="server" AssociatedControlID="PergSecreta" CssClass="col-md-2 control-label">Pergunta Secreta</asp:Label>
+                        <div class="col-md-10">
+                            <asp:TextBox runat="server" ID="PergSecreta" CssClass="form-control" />
+                        </div>
+                    </div>
+
+<%--                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <asp:Button ID="ButtonObtemPergSubmit" runat="server" OnClientClick="ObtemPerguntaSecreta()" Text="Recuperar" CssClass="btn btn-default" />
+                        </div>
+                    </div>--%>
+                    
+                    <div class="form-group">
+                        <asp:Label ID="LabelRespostaSecreta" runat="server" AssociatedControlID="RespSecreta" CssClass="col-md-2 control-label">Resposta Secreta</asp:Label>
+                        <div class="col-md-10">
+                            <asp:TextBox runat="server" ID="RespSecreta" CssClass="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <asp:Button ID="ButtonValidaRespSubmit" runat="server" OnClientClick="ValidaRespostaSecreta()" Text="Validar" CssClass="btn btn-default" />
+                        </div>
+                    </div>
+
+                    <label id="msgErroPerguntaSecreta" style="display: none"></label>
+                    
+                    
+                    
+
                 </div>
             </asp:PlaceHolder>
             <asp:PlaceHolder runat="server" ID="DisplayEmail" Visible="false">
